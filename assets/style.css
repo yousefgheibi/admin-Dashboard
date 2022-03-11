@@ -125,7 +125,7 @@ b {
 }
 
 .warning {
-  color: var(--color-warning);
+  color: var(--color-warning) !important;
 }
 
 aside {
@@ -246,7 +246,7 @@ main .insights {
   gap: 1.6rem;
 }
 
-main .insights> div{
+main .insights > div {
   background: var(--color-white);
   padding: var(--card-padding);
   border-radius: var(--card-border-radius);
@@ -255,11 +255,11 @@ main .insights> div{
   transition: all 300ms ease;
 }
 
-main .insights > div:hover{
+main .insights > div:hover {
   box-shadow: none;
 }
 
-main .insights > div span{
+main .insights > div span {
   background-color: var(--color-primary);
   padding: 0.5rem;
   border-radius: 50%;
@@ -267,11 +267,11 @@ main .insights > div span{
   font-size: 2rem;
 }
 
-main .insights > div.expenses span{
+main .insights > div.expenses span {
   background: var(--color-danger);
 }
 
-main .insights > div.income span{
+main .insights > div.income span {
   background: var(--color-success);
 }
 
@@ -281,19 +281,19 @@ main .insights > div .middle {
   justify-content: space-between;
 }
 
-main .insights h3{
+main .insights h3 {
   margin: 1rem 0 0.6rem;
   font-size: 1rem;
 }
 
-main .insights .progress{
+main .insights .progress {
   position: relative;
   width: 92px;
   height: 92px;
   border-radius: 50%;
 }
 
-main .insights svg{
+main .insights svg {
   width: 7rem;
   height: 7rem;
 }
@@ -303,7 +303,7 @@ main .insights svg circle {
   stroke: var(--color-primary);
   stroke-width: 14;
   stroke-linecap: round;
-  transform: translate(5px,5px);
+  transform: translate(5px, 5px);
   stroke-dasharray: 110;
   stroke-dashoffset: 92;
 }
@@ -315,7 +315,7 @@ main .insights .sales svg circle {
 
 main .insights .expenses svg circle {
   stroke-dasharray: 80;
-  stroke-dashoffset:20;
+  stroke-dashoffset: 20;
 }
 
 main .insights .income svg circle {
@@ -323,7 +323,7 @@ main .insights .income svg circle {
   stroke-dashoffset: 35;
 }
 
-main .insights .progress .number{
+main .insights .progress .number {
   position: absolute;
   top: 0;
   left: 0;
@@ -334,7 +334,7 @@ main .insights .progress .number{
   align-items: center;
 }
 
-main .insights small{
+main .insights small {
   margin-top: 1.3rem;
   display: block;
 }
@@ -344,11 +344,11 @@ main .recent-orders {
   margin-top: 2rem;
 }
 
-main .recent-orders h2{
+main .recent-orders h2 {
   margin-bottom: 0.8rem;
 }
 
-main .recent-orders table{
+main .recent-orders table {
   background-color: var(--color-white);
   width: 100%;
   border-radius: var(--card-border-radius);
@@ -358,21 +358,21 @@ main .recent-orders table{
   transition: all 300ms ease;
 }
 
-main .recent-orders table:hover{
+main .recent-orders table:hover {
   box-shadow: none;
 }
 
-main .recent-orders table tbody td{
+main .recent-orders table tbody td {
   height: 2.8rem;
   border-bottom: 1px solid var(--color-light);
   color: var(--color-dark-variant);
 }
 
-main .recent-orders table tbody tr:last-child td{
+main .recent-orders table tbody tr:last-child td {
   border: none;
 }
 
-main .recent-orders a{
+main .recent-orders a {
   text-align: center;
   display: block;
   margin: 1rem auto;
@@ -380,21 +380,21 @@ main .recent-orders a{
 }
 
 /* ======================= Right =================*/
-.right{
+.right {
   margin-top: 1.4rem;
 }
 
-.right .top{
+.right .top {
   display: flex;
   justify-content: end;
   gap: 2rem;
 }
 
-.right .top button{
+.right .top button {
   display: none;
 }
 
-.right .theme-toggler{
+.right .theme-toggler {
   background: var(--color-light);
   display: flex;
   justify-content: space-between;
@@ -405,7 +405,7 @@ main .recent-orders a{
   border-radius: var(--border-radius-1);
 }
 
-.right .theme-toggler span{
+.right .theme-toggler span {
   font-size: 1.2rem;
   width: 50%;
   height: 100%;
@@ -414,24 +414,24 @@ main .recent-orders a{
   justify-content: center;
 }
 
-.right .theme-toggler span.active{
+.right .theme-toggler span.active {
   background: var(--color-primary);
   color: white;
   border-radius: var(--border-radius-1);
 }
 
-.right .top .profile{
+.right .top .profile {
   display: flex;
   gap: 2rem;
   text-align: right;
 }
 
 /* ==================== Recent Updates =================*/
-.right .recent-updates{
+.right .recent-updates {
   margin-top: 1rem;
 }
 
-.recent-updates h2{
+.recent-updates h2 {
   margin-bottom: 0.8rem;
 }
 
@@ -443,7 +443,7 @@ main .recent-orders a{
   transition: all 300ms ease;
 }
 
-.right .recent-updates .updates:hover{
+.right .recent-updates .updates:hover {
   box-shadow: none;
 }
 
@@ -459,11 +459,11 @@ main .recent-orders a{
   margin-top: 2rem;
 }
 
-.right .sales-analytics h2{
+.right .sales-analytics h2 {
   margin-bottom: 0.8rem;
 }
 
-.right .sales-analytics .item{
+.right .sales-analytics .item {
   background: var(--color-white);
   display: flex;
   align-items: center;
@@ -475,11 +475,11 @@ main .recent-orders a{
   transition: all 300ms ease;
 }
 
-.right .sales-analytics .item:hover{
+.right .sales-analytics .item:hover {
   box-shadow: none;
 }
 
-.right .sales-analytics .item .right{
+.right .sales-analytics .item .right {
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -487,7 +487,7 @@ main .recent-orders a{
   width: 100%;
 }
 
-.right .sales-analytics .item .icon{
+.right .sales-analytics .item .icon {
   padding: 0.6rem;
   color: var(--color-white);
   border-radius: 50%;
@@ -495,15 +495,15 @@ main .recent-orders a{
   display: flex;
 }
 
-.right .sales-analytics .item.offline .icon{
+.right .sales-analytics .item.offline .icon {
   background: var(--color-danger);
 }
 
-.right .sales-analytics .item.customers .icon{
+.right .sales-analytics .item.customers .icon {
   background: var(--color-success);
 }
 
-.right .sales-analytics .add-product{
+.right .sales-analytics .add-product {
   background-color: transparent;
   border: 2px dashed var(--color-primary);
   color: var(--color-primary);
@@ -512,12 +512,161 @@ main .recent-orders a{
   justify-content: center;
 }
 
-.right .sales-analytics .add-product div{
+.right .sales-analytics .add-product div {
   display: flex;
   align-items: center;
   gap: 0.6rem;
 }
 
-.right .sales-analytics .add-product div h3{
+.right .sales-analytics .add-product div h3 {
   font-weight: 600;
+}
+
+/*------------------- Media Queries ------------------*/
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 94%;
+    grid-template-columns: 7rem auto 23rem;
+  }
+
+  aside .logo h2 {
+    display: none;
+  }
+
+  aside .sidebar h3 {
+    display: none;
+  }
+
+  aside .sidebar a {
+    width: 5.6rem;
+  }
+
+  aside .sidebar a:last-child {
+    position: relative;
+    margin-top: 1.8rem;
+  }
+
+  main .insights {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  main .recent-orders {
+    width: 94%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 2rem 0 0 8.8rem;
+  }
+
+  main .recent-orders table {
+    width: 83vw;
+  }
+
+  main table tbody tr th:last-child,
+  main table tbody tr th:first-child {
+    display: none;
+  }
+  main table tbody tr td:last-child,
+  main table tbody tr td:first-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  aside {
+    position: fixed;
+    left: 0;
+    background: var(--color-white);
+    width: 18rem;
+    z-index: 3;
+    box-shadow: 1rem 3rem 4rem var(--color-light);
+    height: 100vh;
+    padding-right: var(--card-padding);
+    display: none;
+  }
+  aside .logo {
+    margin-left: 1rem;
+  }
+  aside .logo .h2{
+    display: inline;
+  }
+  aside .sidebar h3{
+    display: inline;
+  }
+  aside .sidebar a{
+    width: 100%;
+    height: 3.4rem;
+  }
+
+  aside .sidebar a:last-child{
+    position: absolute;
+    bottom: 5rem;
+  }
+  
+  aside .close{
+    display: inline-block;
+    cursor: pointer;
+   }
+
+   main {
+     margin-top: 8rem;
+     padding: 0 1rem;
+   }
+   main .recent-orders{
+     position: relative;
+     margin: 3rem 0 0 0 !important;
+     width: 100%;
+   }
+   main .recent-orders table{
+     width: 100%;
+     margin: 0;
+   }
+
+   .right {
+     width: 94%;
+     margin: 0 auto 4rem;
+   }
+   .right .top{
+     position: fixed;
+     top: 0;
+     left: 0;
+     align-items: center;
+     padding: 0 0.8rem;
+     height: 4.6rem;
+     background: var(--color-white);
+     width: 100%;
+     margin: 0;
+     z-index: 2;
+     box-shadow: 0 1rem 1rem var(--color-light);
+    }
+
+    .right .top .theme-toggler{
+      width: 4.4rem;
+      position: absolute;
+      left: 66%;
+    }
+
+    .right .profile .info {
+      display: none;
+    }
+
+    .right .top button{
+      display: inline-block;
+      background: transparent;
+      cursor: pointer;
+      color: var(--color-dark);
+      position: absolute;
+      left: 1rem;
+    }
+
+    .right .top button span{
+        font-size: 2rem;
+    }
+
 }
