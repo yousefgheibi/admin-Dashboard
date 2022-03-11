@@ -590,6 +590,7 @@ main .recent-orders a {
     padding-right: var(--card-padding);
     display: none;
   }
+
   aside .logo {
     margin-left: 1rem;
   }
